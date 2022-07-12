@@ -2,17 +2,17 @@
 
 #check docker
 if ! command -v docker > /dev/null; then
-  apt install docker.io
+  apt install -y docker.io
 fi
 
 #check docker-compose
 if ! command -v docker-compose > /dev/null; then
-  apt install docker-compose
+  apt install -y docker-compose
 fi
 
 #check java
 if ! command -v java > /dev/null; then
-  apt install default-jre
+  apt install -y default-jre
 fi
 
 #install live-platform
