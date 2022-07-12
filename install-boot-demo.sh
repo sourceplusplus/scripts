@@ -5,6 +5,11 @@ if ! command -v docker > /dev/null; then
   apt install docker.io
 fi
 
+#check docker-compose
+if ! command -v docker-compose > /dev/null; then
+  apt install docker-compose
+fi
+
 #check java
 if ! command -v java > /dev/null; then
   apt install default-jre
